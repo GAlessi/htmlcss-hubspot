@@ -1,40 +1,76 @@
+/* Regole generali */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: 1px solid black;
 }
 
+.margini{
+    width: 86%;
+    margin: auto;
+}
+
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Regole Header */
 header{
     height: 150px;
     background-color: grey;
 }
 
+/* Regole Jumbotron */
 .jumbotron{
     height: 500px;
     background-color: pink;
 }
 
+/* Regole Main */
+main{
+    background-color: lightgrey;
+}
 .separatore{
     height: 75px;
     background-color: lightblue;
 }
 
-.colonne{
-    height: 1500px;
-    background-color: lightgrey;
+/* Regole colonne */
+
+.motto{
+    height: 300px;
+    background-color: white;
 }
 
+/* prima colonna */
+.prima{
+    height: 300px;
+    background-color: blue;
+}
+
+/* seconda colonna */
+
+aside{
+    float: left;
+    width: 33%;
+    height: 700px;
+    background-color: red;
+}
+/* Regole Learn */
 .learn{
     height: 700px;
     background-color: green;
 }
 
+/* /Regole Partners */
 .partners{
     height: 700px;
     background-color: lightgrey;
 }
 
-
+/* Regole Footer */
 footer{
     height: 700px;
     background-color: black;
