@@ -3,3 +3,39 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+header{
+    height: 150px;
+    background-color: grey;
+}
+
+.jumbotron{
+    height: 500px;
+    background-color: pink;
+}
+
+.separatore{
+    height: 75px;
+    background-color: lightblue;
+}
+
+.colonne{
+    height: 1500px;
+    background-color: lightgrey;
+}
+
+.learn{
+    height: 700px;
+    background-color: green;
+}
+
+.partners{
+    height: 700px;
+    background-color: lightgrey;
+}
+
+
+footer{
+    height: 700px;
+    background-color: black;
+}
