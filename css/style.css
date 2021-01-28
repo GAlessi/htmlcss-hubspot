@@ -3,11 +3,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
 }
 
 .margini{
-    width: 86%;
+    width: 70%;
     margin: auto;
 }
 
@@ -16,25 +21,151 @@
     display: table;
     clear: both;
 }
+
+.bottone{
+    text-decoration: none;
+    border-radius: 5px;
+    border:1px solid #fe775a;
+    color: white;
+    background-color: #fe775a;
+}
+
 /* Regole Header */
 header{
-    height: 150px;
-    background-color: grey;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 900;
 }
 
+.pre-nav{
+    background-color: #f5f8fa;
+    border-bottom: 1px solid black;
+}
+
+.pre-nav .sinistra{
+    float: left;
+    height: 70px;
+    font-size: 14px;
+}
+
+.lingua{
+    display: inline-block;
+    margin-top: 27px;
+    padding-right: 10px;
+    border-right: 1px solid black;
+}
+
+.contatti{
+    display: inline-block;
+    margin-top: 27px;
+    padding-left: 10px;
+}
+
+.pre-nav .destra{
+    float: right;
+}
+
+.container_bottoni{
+    height: 50px;
+    margin-top: 27px;
+    font-size: 12px;
+}
+
+header .bottone{
+    padding: 10px;
+}
+
+#vuoto{
+    background-color: #E8FAFF;
+    color: #fe775a;
+    margin: 0 20px;
+}
+/* regole nav */
+nav{
+    background-color: white;
+}
+
+nav img{
+    margin-top: 20px;
+}
+
+.drop{
+    float: right;
+    height: 70px;
+}
+
+header nav ul{
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+header nav li{
+    display: inline-block;
+    margin: 0 5px;
+}
+
+header nav li:last-child{
+    margin: 0;
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+}
 /* Regole Jumbotron */
 .jumbotron{
-    height: 500px;
-    background-color: pink;
+    position: relative;
+    margin-top: 150px;
+    height: 620px;
+    background-image: url(../img/jumbotron.png);
+    background-size: 100%;
+    background-position: 0 90%;
+    background-repeat: no-repeat;
 }
 
+.jumbotron > .testo{
+    position: absolute;
+    left: 15%;
+    top: 50px;
+    width: 35%;
+    color: #3A3B48;
+}
+
+h1{
+    font-size: 45px;
+}
+
+.jumbotron p{
+    line-height: 25px;
+    margin: 35px 0;
+    font-size: 14px;
+}
+
+.jumbotron a{
+    padding: 15px 30px;
+    font-size: 12px;
+}
+
+.jumbotron h6{
+    margin-top: 50px;
+}
+
+.separatore{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 76px;
+    width: 100%;
+    background-color: #afebe4;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+
+}
 /* Regole Main */
 main{
-    background-color: lightgrey;
-}
-.separatore{
-    height: 75px;
-    background-color: lightblue;
+    background-color: pink;
 }
 
 /* Regole colonne */
@@ -42,6 +173,13 @@ main{
 .motto{
     height: 300px;
     background-color: white;
+    text-align: center;
+}
+
+img[alt~=cubo]{
+    width: 20%;
+    height: auto;
+    margin-top: 50px;
 }
 
 /* prima colonna */
