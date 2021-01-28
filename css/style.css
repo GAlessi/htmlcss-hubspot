@@ -58,20 +58,94 @@ aside{
     height: 700px;
     background-color: red;
 }
+
+.centrale{
+    height: 800px;
+}
 /* Regole Learn */
 .learn{
     height: 700px;
     background-color: green;
 }
 
-/* /Regole Partners */
+.learn_scritte{
+    height: 200px;
+    background-color: red;
+}
+
+
+.quadrato{
+    float: left;
+    height: 200px;
+    width: 25%;
+    background-color: pink;
+}
+
+/* Regole Partners */
 .partners{
     height: 700px;
     background-color: lightgrey;
 }
 
+/* row superiore */
+.partners_superiore{
+    /* height: 250px; */
+}
+
+.numeri{
+    float: left;
+    width: 20%;
+    height: 250px;
+    background-color: red;
+}
+
+.loghi{
+    float: right;
+    width: 60%;
+    height: 150px;
+    background-color: red;
+
+}
+
+/* row inferiore */
+.partners_inferiore{
+    /* height: 450px; */
+}
+
+.start{
+    float: left;
+    width: 40%;
+    height: 440px;
+    background-color: red;
+}
+
+.tizia{
+    float: right;
+    width: 30%;
+    height: 440px;
+    background-color: red;
+}
+
 /* Regole Footer */
 footer{
-    height: 700px;
+    /* height: 700px; */
     background-color: black;
+}
+
+.column{
+    float: left;
+    height: 300px;
+    background-color: red;
+    width: 25%;
+
+}
+
+.lingue{
+    height: 150px;
+    background-color: lightblue;
+}
+
+.copiright{
+    height: 150px;
+    background-color: lightgrey;
 }
