@@ -9,7 +9,10 @@
 body{
     font-family: 'Montserrat', sans-serif;
     color: #113949;
+}
 
+a{
+    text-decoration: none;
 }
 
 .margini{
@@ -19,7 +22,6 @@ body{
 
 
 .bottone{
-    text-decoration: none;
     border-radius: 5px;
     border:1px solid #fe775a;
     color: white;
@@ -117,7 +119,6 @@ header nav li:last-child{
 }
 
 header li a{
-    text-decoration: none;
     color: #113949;
 }
 
@@ -247,6 +248,7 @@ main h5{
     vertical-align: middle;
     margin-bottom: 30px;
     color: grey;
+    background-color: grey;
 }
 
 .prima .destra ul{
@@ -384,8 +386,6 @@ aside{
     vertical-align: middle;
 }
 
-
-
 /* row inferiore */
 .partners_inferiore{
     padding-top: 50px;
@@ -424,6 +424,7 @@ aside{
     width: 100%;
     height: auto;
 }
+
 /* Regole Footer */
 footer{
     background-color: #32495b;
@@ -443,7 +444,7 @@ footer .column{
     margin-right:5%;
 }
 
-footer .column h5:first-child{
+footer .column a:first-child{
     color: white;
     margin: 20px 0;
 }
@@ -454,13 +455,12 @@ footer .column h5{
 
 .supporto{
     display: inline-block;
-    text-decoration: none;
     font-size: 13px;
     color: #32495b;
     border-radius: 5px;
     background-color: #F0F0F0;
     padding: 10px;
-    margin: 15px 0;
+    margin-bottom: 15px;
 }
 
 .social i{
@@ -475,8 +475,8 @@ footer .column h5{
     padding: 15px;
     text-align: center;
 }
+
 .lingue a, .legal_stuff a{
-    text-decoration: none;
     color: rgb(206,218,225);
     margin: 0 10px;
     font-size: 14px;
