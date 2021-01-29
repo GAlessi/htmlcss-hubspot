@@ -234,7 +234,7 @@ main h5{
     margin-bottom: 20px;
 }
 
-.destra h4{
+.prima .destra h4{
     display: inline-block;
     vertical-align: middle;
     margin-right: 50px;
@@ -426,24 +426,79 @@ aside{
 }
 /* Regole Footer */
 footer{
-    /* height: 700px; */
-    background-color: black;
+    background-color: #32495b;
+    padding: 10px 0 50px 0;
+    text-align: left;
+    color: rgb(206,218,225);
+}
+
+footer a{
+    color: rgb(206,218,225);
 }
 
 footer .column{
     float: left;
-    height: 300px;
-    background-color: red;
-    width: 25%;
-
+    width: 20%;
+    min-width: 210px;
+    margin-right:5%;
 }
 
+footer .column h5:first-child{
+    color: white;
+    margin: 20px 0;
+}
+
+footer .column h5{
+    margin: 15px 0;
+}
+
+.supporto{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 13px;
+    color: #32495b;
+    border-radius: 5px;
+    background-color: #F0F0F0;
+    padding: 10px;
+    margin: 15px 0;
+}
+
+.social i{
+    width: 18%;
+    text-align: left;
+}
+
+/* lingue del footer */
 .lingue{
-    height: 150px;
-    background-color: lightblue;
+    border-bottom: 1px solid rgb(206,218,225);
+    margin-top: 50px;
+    padding: 15px;
+    text-align: center;
+}
+.lingue a, .legal_stuff a{
+    text-decoration: none;
+    color: rgb(206,218,225);
+    margin: 0 10px;
+    font-size: 14px;
 }
 
-.copiright{
-    height: 150px;
-    background-color: lightgrey;
+/* sezione copyright del footer */
+.copyright{
+    margin-top: 50px;
+}
+
+.logo_sinistra{
+    float: left;
+}
+
+.copyright h5{
+    margin-top: 5px;
+}
+
+.copyright h5 > i{
+    margin: 0 4px;
+}
+
+.legal_stuff{
+    float: right;
 }
