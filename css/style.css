@@ -18,11 +18,6 @@ body{
     margin: auto;
 }
 
-.row::after{
-    content: "";
-    display: table;
-    clear: both;
-}
 
 .bottone{
     text-decoration: none;
@@ -32,6 +27,16 @@ body{
     background-color: #fe775a;
 }
 
+li i[class~=fa-check-circle]{
+    color: #fe775a;
+    margin-right: 10px;
+}
+
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
 /* Regole Header */
 header{
     position: fixed;
@@ -112,15 +117,16 @@ header nav li:last-child{
     margin: 0;
 }
 
-li a{
+header li a{
     text-decoration: none;
-    color: black;
+    color: #113949;
 }
+
 /* Regole Jumbotron */
 .jumbotron{
     position: relative;
     margin-top: 150px;
-    height: 620px;
+    height: 725px;
     background-image: url(../img/jumbotron.png);
     background-size: 100%;
     background-position: 0 90%;
@@ -157,7 +163,7 @@ h1{
     position: absolute;
     bottom: 0;
     left: 0;
-    height: 76px;
+    height: 86px;
     width: 100%;
     background-color: #afebe4;
     border-top: 3px solid black;
@@ -172,8 +178,6 @@ main{
 /* Regole colonne */
 
 .motto{
-    /* height: 300px; */
-    /* background-color: white; */
     text-align: center;
 }
 
@@ -188,15 +192,17 @@ img[alt~=cubo]{
     margin:50px auto;
     line-height: 25px;
 }
-/* prima colonna */
-.prima{
-    height: 300px;
-    background-color: blue;
+
+/* prima colonna sinistra */
+ main .column{
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid lightgrey;
+    margin-bottom: 50px;
 }
 
 .prima .sinistra{
     width: 16%;
-    background-color: red;
     text-align: center;
     float: left;
     margin: 30px 10%;
@@ -212,35 +218,132 @@ img[alt~=cubo]{
     padding: 15px;
     margin: 20px;
 }
-/* seconda colonna */
 
+/* prima colonna destra */
+.prima .destra{
+    float: left;
+    width: 52%;
+    margin-top: 60px;
+}
+
+main h3{
+    margin-bottom: 30px;
+}
+
+main h5{
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+.destra h4{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 50px;
+    margin-bottom: 30px;
+}
+
+.prima .destra hr{
+    display: inline-block;
+    width: 50%;
+    vertical-align: middle;
+    margin-bottom: 30px;
+    color: grey;
+}
+
+.prima .destra ul{
+    margin-bottom: 50px;
+}
+
+.prima .destra li{
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 13px;
+}
+
+/* seconda colonna */
 aside{
     float: left;
-    width: 33%;
-    height: 700px;
-    background-color: red;
+    width: 30%;
+}
+
+.seconda .column{
+    text-align: center;
+}
+
+.seconda .column img{
+    max-height: 90px;
+    width: auto;
+    margin: 20px 0;
+}
+.seconda h5{
+    min-height: 175px;
+}
+.seconda h4{
+    margin: 30px 0;
+}
+
+.seconda ul{
+    list-style-type: none;
+    text-align: left;
+}
+
+.seconda .bottone{
+    display: inline-block;
+    margin: 50px 0 30px 0;
+    padding: 15px;
 }
 
 .centrale{
-    height: 800px;
+    margin: 0 5%;
 }
+
 /* Regole Learn */
 .learn{
-    height: 700px;
-    background-color: green;
+    background-image: linear-gradient(45deg,#00a4bd,#00bda5);
+    text-align: center;
+    padding: 50px 0 100px 0;
+    color: white;
 }
 
-.learn_scritte{
-    height: 200px;
-    background-color: red;
+.learn_scritte h2{
+    font-size: 30px;
+    margin-bottom: 30px;
 }
 
+.learn_scritte h5{
+    margin-bottom: 50px;
+}
 
+/* regole quadrati */
 .quadrato{
     float: left;
-    height: 200px;
     width: 25%;
-    background-color: pink;
+    padding-bottom: 20px;
+}
+
+.learn_quadrati_1 .quadrato{
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.learn_quadrati_2 .quadrato{
+    border-right: 1px solid white;
+}
+
+.learn_quadrati_1 .quadrato:last-child, .learn_quadrati_2 .quadrato:last-child{
+    border-right: none;
+}
+
+.quadrato img{
+    margin-top: 20px;
+    max-height: 30px;
+}
+
+.numeroni{
+    display: block;
+    font-size: 35px;
+    font-weight: 700;
+    margin: 20px 0;
 }
 
 /* Regole Partners */
@@ -294,7 +397,7 @@ footer{
     background-color: black;
 }
 
-.column{
+footer .column{
     float: left;
     height: 300px;
     background-color: red;
