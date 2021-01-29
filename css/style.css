@@ -8,7 +8,6 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
     color: #113949;
 
 }
@@ -171,7 +170,7 @@ h1{
 
 }
 /* Regole Main */
-main{
+.container_colonne{
     background-color: #F0F0F0;
 }
 
@@ -348,49 +347,83 @@ aside{
 
 /* Regole Partners */
 .partners{
-    height: 700px;
-    background-color: lightgrey;
+    padding-top: 50px;
+    padding-bottom: 20px;
 }
 
-/* row superiore */
-.partners_superiore{
-    /* height: 250px; */
-}
-
+/* row superiore numeri*/
 .numeri{
     float: left;
     width: 20%;
-    height: 250px;
-    background-color: red;
+    margin-left: 5%;
 }
 
+.partners_superiore .numeri > span{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.numeri h5{
+    margin-top: 30px;
+}
+
+.numeri h5 > span{
+    font-size: 15px;
+}
+
+/* row superiore loghi */
 .loghi{
     float: right;
     width: 60%;
-    height: 150px;
-    background-color: red;
-
 }
+
+.loghi img{
+    max-width: 20%;
+    height: auto;
+    margin: 2%;
+    vertical-align: middle;
+}
+
+
 
 /* row inferiore */
 .partners_inferiore{
-    /* height: 450px; */
+    padding-top: 50px;
 }
 
+/* sinistra */
 .start{
     float: left;
     width: 40%;
-    height: 440px;
-    background-color: red;
 }
 
-.tizia{
+.start h2{
+    font-size: 28px;
+}
+
+.start h5{
+    margin: 30px 0 60px 0;
+}
+
+.start a{
+    padding: 15px 30px;
+    font-size: 14px;
+}
+
+.start h6{
+    margin-top: 60px;
+}
+
+/* destra */
+.donna{
     float: right;
     width: 30%;
-    height: 440px;
-    background-color: red;
 }
 
+.donna img{
+    width: 100%;
+    height: auto;
+}
 /* Regole Footer */
 footer{
     /* height: 700px; */
