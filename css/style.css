@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid black; */
 }
 
 body{
@@ -38,6 +37,7 @@ li i[class~=fa-check-circle]{
     display: table;
     clear: both;
 }
+
 /* Regole Header */
 header{
     position: fixed;
@@ -86,10 +86,11 @@ header .bottone{
 }
 
 #vuoto{
-    background-color: #E8FAFF;
+    background-color: #f5f8fa;
     color: #fe775a;
     margin: 0 20px;
 }
+
 /* regole nav */
 nav{
     background-color: white;
@@ -168,8 +169,8 @@ h1{
     background-color: #afebe4;
     border-top: 3px solid black;
     border-bottom: 3px solid black;
-
 }
+
 /* Regole Main */
 .container_colonne{
     background-color: #F0F0F0;
