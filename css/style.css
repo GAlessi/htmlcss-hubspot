@@ -25,7 +25,6 @@ a{
     border:1px solid #fe775a;
     color: white;
     background-color: #fe775a;
-    box-shadow: 3px 3px rgb(166,90,0);
 }
 
 li i[class~=fa-check-circle]{
@@ -458,13 +457,16 @@ footer .column{
     margin-right:5%;
 }
 
-footer .column a:first-child{
+footer ul li:first-child{
+    font-size: 14px;
     color: white;
     margin: 20px 0;
 }
 
-footer .column h5{
+footer .column li{
+    list-style-type: none;
     margin: 15px 0;
+    font-size: 12px;
 }
 
 .supporto{
