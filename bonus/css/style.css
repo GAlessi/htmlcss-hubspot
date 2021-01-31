@@ -1,0 +1,520 @@
+/* Regole generali */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: #113949;
+}
+
+a{
+    text-decoration: none;
+}
+
+.margini{
+    width: 70%;
+    margin: auto;
+}
+
+
+.bottone{
+    border-radius: 5px;
+    border:1px solid #fe775a;
+    color: white;
+    background-color: #fe775a;
+}
+
+li i[class~=fa-check-circle]{
+    color: #fe775a;
+    margin-right: 10px;
+}
+
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Regole Header */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 900;
+}
+
+.pre-nav{
+    background-color: #f5f8fa;
+    border-bottom: 1px solid black;
+}
+
+.pre-nav .sinistra{
+    float: left;
+    height: 70px;
+    font-size: 14px;
+}
+
+.lingua{
+    display: inline-block;
+    margin-top: 27px;
+    padding-right: 10px;
+    border-right: 1px solid black;
+}
+
+.pre-nav a{
+    color: #113949;
+}
+
+.contatti{
+    display: inline-block;
+    margin-top: 27px;
+    padding-left: 10px;
+}
+
+.pre-nav .destra{
+    float: right;
+}
+
+.container_bottoni{
+    height: 50px;
+    margin-top: 27px;
+    font-size: 12px;
+}
+
+.container_bottoni a:last-child{
+    color: white;
+}
+
+header .bottone{
+    padding: 10px;
+}
+
+#vuoto{
+    background-color: #f5f8fa;
+    color: #fe775a;
+    margin: 0 20px;
+}
+
+/* regole nav */
+nav{
+    background-color: white;
+}
+
+nav img{
+    margin-top: 20px;
+}
+
+.drop{
+    float: right;
+    height: 70px;
+}
+
+header nav ul{
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+header nav li{
+    display: inline-block;
+    margin: 0 5px;
+}
+
+header nav li:last-child{
+    margin: 0;
+}
+
+header li a{
+    color: #113949;
+}
+
+header li a i{
+    margin: 0 6px;
+}
+
+/* Regole Jumbotron */
+.jumbotron{
+    position: relative;
+    margin-top: 150px;
+    height: 725px;
+    background-image: url(../../img/jumbotron.png);
+    background-size: 100%;
+    background-position: 0 90%;
+    background-repeat: no-repeat;
+}
+
+.jumbotron > .testo{
+    position: absolute;
+    left: 15%;
+    top: 50px;
+    width: 35%;
+}
+
+h1{
+    font-size: 45px;
+}
+
+.jumbotron p{
+    line-height: 25px;
+    margin: 35px 0;
+    font-size: 14px;
+}
+
+.jumbotron a{
+    padding: 15px 30px;
+    font-size: 12px;
+}
+
+.jumbotron h6{
+    margin-top: 50px;
+}
+
+.separatore{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 86px;
+    width: 100%;
+    background-color: #afebe4;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+/* Regole Main */
+.container_colonne{
+    background-color: #F0F0F0;
+}
+
+/* Regole colonne */
+
+.motto{
+    text-align: center;
+}
+
+img[alt~=cubo]{
+    width: 20%;
+    height: auto;
+    margin-top: 50px;
+}
+
+.motto h5{
+    width: 70%;
+    margin:50px auto;
+    line-height: 25px;
+}
+
+/* prima colonna sinistra */
+ main .column{
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid lightgrey;
+    margin-bottom: 50px;
+}
+
+.prima .sinistra{
+    width: 16%;
+    text-align: center;
+    float: left;
+    margin: 30px 10%;
+}
+
+.prima img{
+    width: 80%;
+    margin-top: 30px;
+}
+
+.prima a{
+    display: inline-block;
+    padding: 15px;
+    margin: 20px;
+}
+
+/* prima colonna destra */
+.prima .destra{
+    float: left;
+    width: 52%;
+    margin-top: 60px;
+}
+
+main h3{
+    margin-bottom: 30px;
+}
+
+main h5{
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+.prima .destra h4{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 50px;
+    margin-bottom: 30px;
+}
+
+.prima .destra hr{
+    display: inline-block;
+    width: 50%;
+    vertical-align: middle;
+    margin-bottom: 30px;
+    color: grey;
+    background-color: grey;
+}
+
+.prima .destra ul{
+    margin-bottom: 50px;
+}
+
+.prima .destra li{
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 13px;
+}
+
+/* seconda colonna */
+aside{
+    float: left;
+    width: 30%;
+}
+
+.seconda .column{
+    text-align: center;
+}
+
+.seconda .column img{
+    max-height: 90px;
+    width: auto;
+    margin: 20px 0;
+}
+.seconda h5{
+    min-height: 175px;
+}
+.seconda h4{
+    margin: 30px 0;
+}
+
+.seconda ul{
+    list-style-type: none;
+    text-align: left;
+}
+
+.seconda .bottone{
+    display: inline-block;
+    margin: 50px 0 30px 0;
+    padding: 15px;
+}
+
+.centrale{
+    margin: 0 5%;
+}
+
+/* Regole Learn */
+.learn{
+    background-image: linear-gradient(45deg,#00a4bd,#00bda5);
+    text-align: center;
+    padding: 50px 0 100px 0;
+    color: white;
+}
+
+.learn_scritte h2{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.learn_scritte h5{
+    margin-bottom: 50px;
+}
+
+/* regole quadrati */
+.quadrato{
+    float: left;
+    width: 25%;
+    padding-bottom: 20px;
+}
+
+.learn_quadrati_1 .quadrato{
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.learn_quadrati_2 .quadrato{
+    border-right: 1px solid white;
+}
+
+.learn_quadrati_1 .quadrato:last-child, .learn_quadrati_2 .quadrato:last-child{
+    border-right: none;
+}
+
+.quadrato img{
+    margin-top: 20px;
+    max-height: 30px;
+}
+
+.numeroni{
+    display: block;
+    font-size: 35px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+/* Regole Partners */
+.partners{
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* row superiore numeri*/
+.numeri{
+    float: left;
+    width: 20%;
+    margin-left: 5%;
+}
+
+.partners_superiore .numeri > span{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.numeri h5{
+    margin-top: 30px;
+}
+
+.numeri h5 > span{
+    font-size: 15px;
+}
+
+/* row superiore loghi */
+.loghi{
+    float: right;
+    width: 60%;
+}
+
+.loghi img{
+    max-width: 20%;
+    height: auto;
+    margin: 2%;
+    vertical-align: middle;
+}
+
+/* row inferiore */
+.partners_inferiore{
+    padding-top: 50px;
+}
+
+/* sinistra */
+.start{
+    float: left;
+    width: 40%;
+}
+
+.start h2{
+    font-size: 28px;
+}
+
+.start h5{
+    margin: 30px 0 60px 0;
+}
+
+.start a{
+    padding: 15px 30px;
+    font-size: 14px;
+}
+
+.start h6{
+    margin-top: 60px;
+}
+
+/* destra */
+.donna{
+    float: right;
+    width: 30%;
+}
+
+.donna img{
+    width: 100%;
+    height: auto;
+}
+
+/* Regole Footer */
+footer{
+    background-color: #32495b;
+    padding: 10px 0 50px 0;
+    text-align: left;
+    color: rgb(206,218,225);
+}
+
+footer a{
+    color: rgb(206,218,225);
+}
+
+footer .column{
+    float: left;
+    width: 20%;
+    min-width: 210px;
+    margin-right:5%;
+}
+
+footer ul li:first-child{
+    font-size: 14px;
+    color: white;
+    margin: 20px 0;
+}
+
+footer .column li{
+    list-style-type: none;
+    margin: 15px 0;
+    font-size: 12px;
+}
+
+.supporto{
+    display: inline-block;
+    font-size: 13px;
+    color: #32495b;
+    border-radius: 5px;
+    background-color: #F0F0F0;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.social i{
+    width: 18%;
+    text-align: left;
+}
+
+/* lingue del footer */
+.lingue{
+    border-bottom: 1px solid rgb(206,218,225);
+    margin-top: 50px;
+    padding: 15px;
+    text-align: center;
+}
+
+.lingue a, .legal_stuff a{
+    color: rgb(206,218,225);
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+/* sezione copyright del footer */
+.copyright{
+    margin-top: 50px;
+}
+
+.logo_sinistra{
+    float: left;
+}
+
+.copyright h5{
+    margin-top: 5px;
+}
+
+.copyright h5 > i{
+    margin: 0 4px;
+}
+
+.legal_stuff{
+    float: right;
+}
